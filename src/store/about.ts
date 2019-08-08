@@ -7,7 +7,7 @@ import Store from '../store';
     name: 'about',
     namespaced: true,
 })
-export default class UserAdminModule extends VuexModule {
+export default class AboutModule extends VuexModule {
 
     public firstName: string = 'bob';
     public lastName: string = 'smith';
@@ -24,7 +24,9 @@ export default class UserAdminModule extends VuexModule {
     }
 
     @Action({ commit: 'setNames'})
-    public async setNamesAsync(payload: {names: string}) {
-        return await payload.names;
+    public async setNamesAsync(payload: {name: string}) {
+        return await payload;
     }
 }
+
+

@@ -10,7 +10,8 @@
     <div>
       <!-- getterNum = {{getterNum}} -->
     </div>
-    <button @click="changeName()">Change State</button>
+    <button @click="runMutation()">Run Mutation</button>
+    <button @click="runAction()">Run Action</button>
   </div>
 </template>
 
@@ -27,8 +28,11 @@ export default class HelloWorld extends Vue {
 
   @Prop() private msg!: string;
 
-  private changeName(): void {
-    this.aboutState.setNames({name: 'hello there'});
+  private runMutation(): void {
+    this.aboutState.setNames({name: 'Aliyah Yon'});
+  }
+  private runAction(): void {
+    this.aboutState.setNamesAsync({name: 'Michael Smith'});
   }
 
 }
