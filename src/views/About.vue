@@ -16,7 +16,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Emit } from 'vue-property-decorator';
-import { State, Getter, Action, Mutation, namespace } from 'vuex-class';
 import { getModule } from 'vuex-module-decorators';
 import about from '../store/about';
 

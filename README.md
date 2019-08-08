@@ -1,4 +1,4 @@
-# test-app
+# test-app for using TypeScript with Vue and Vuex
 
 ## Project setup
 ```
